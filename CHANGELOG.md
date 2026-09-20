@@ -1,5 +1,11 @@
 # @\_linked/icons
 
+## 1.0.2
+
+### Patch Changes
+
+- [#3](https://github.com/linked-fw/icons/pull/3) [`967393e`](https://github.com/linked-fw/icons/commit/967393e7be794adeb4e198a9fe1c3f4e6fbbba70) Thanks [@flyon](https://github.com/flyon)! - Declare npm as the package manager for this repo, convert the build scripts off `yarn`, and mark `package-lock.json` as a generated file.
+
 ## 1.0.1
 
 ### Patch Changes
