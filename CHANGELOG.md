@@ -1,5 +1,19 @@
 # @\_linked/icons
 
+## 1.0.3
+
+### Patch Changes
+
+- [#5](https://github.com/linked-fw/icons/pull/5) [`4aaa57a`](https://github.com/linked-fw/icons/commit/4aaa57a1af006efca9fe2dc93f3e4b49d03afbd9) Thanks [@flyon](https://github.com/flyon)! - Compile the whole `src` folder, and let a bare import resolve under Node10.
+
+  The build only emitted what an entry transitively reached, so any module
+  nothing imported was never built — and never type-checked, so it rotted
+  quietly. `include` now covers `src/**/*` with tests excluded explicitly.
+
+  `typesVersions` maps every specifier through `lib/esm/*`, so a `types` value
+  that already carried that prefix had it applied twice and no consumer on
+  classic Node10 resolution could `import` the package by its bare name.
+
 ## 1.0.2
 
 ### Patch Changes
