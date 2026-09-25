@@ -44,7 +44,7 @@ the bundle.
 | Data binding | `@_linked/react` | shapes and queries |
 | Shape-driven UI | `@_linked/shape-ui` | how to render an arbitrary shape |
 
-See [arch-03 §UI package layering](https://github.com/linked-cm/create-now/blob/main/docs/architecture/03-packages-and-governance.md#ui-package-layering).
+See [arch-03 §UI package layering](https://github.com/linked-fw/create-now/blob/main/docs/architecture/03-packages-and-governance.md#ui-package-layering).
 
 ## Releasing
 
