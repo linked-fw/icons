@@ -1,5 +1,11 @@
 # @\_linked/icons
 
+## 1.1.2
+
+### Patch Changes
+
+- [#12](https://github.com/linked-fw/icons/pull/12) [`e2777a8`](https://github.com/linked-fw/icons/commit/e2777a82493a6d404ce2b91776409aa891a44392) Thanks [@flyon](https://github.com/flyon)! - Sourcemaps now embed their TypeScript source, so consumers no longer see 'points to missing source files' warnings.
+
 ## 1.1.1
 
 ### Patch Changes
