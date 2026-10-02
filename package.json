@@ -23,7 +23,8 @@
     "build": "rimraf ./lib && npm run build-esm && npm run copy-to-lib",
     "build-esm": "echo \"compiling ESM\" && rimraf ./lib/esm && tsc -p tsconfig-esm.json",
     "copy-to-lib": "echo 'copying CSS + JSON assets to lib folder' && copyfiles -u 1 'src/**/*.css' 'src/**/*.json' lib/esm",
-    "changeset": "changeset"
+    "changeset": "changeset",
+    "test": "node --test test/*.test.mjs"
   },
   "keywords": [
     "linked",
@@ -61,12 +62,14 @@
     "@types/node": "^24.0.0",
     "@types/react": "^19.3.0",
     "copyfiles": "^2.4.1",
-    "lucide-react": "^0.439.0",
+    "lucide-react": "^1.0.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
     "rimraf": "^6.0.0",
     "typescript": "^5.7.3"
   },
   "peerDependencies": {
-    "lucide-react": ">=0.4",
+    "lucide-react": "^0.439.0 || ^1.0.0",
     "react": "^18 || ^19"
   },
   "publishConfig": {
