@@ -1,5 +1,20 @@
 # @\_linked/icons
 
+## 1.1.4
+
+### Patch Changes
+
+- [#21](https://github.com/linked-fw/icons/pull/21) [`491b95e`](https://github.com/linked-fw/icons/commit/491b95e5c6d28fadbeb48fb8d3dbd6d1879537ed) Thanks [@renovate](https://github.com/apps/renovate)! - Support lucide-react 1.x. The `Icons` names are unchanged: where lucide 1.x renamed a glyph
+  (`AlertCircle` → `CircleAlert`, `Trash2` → `Trash`, `Loader2` → `LoaderCircle`, …) the set
+  still imports the old name, which lucide keeps as an alias, so the same build works against
+  both majors. The `lucide-react` peer range is now `^0.439.0 || ^1.0.0` instead of the
+  open-ended `>=0.4`, which admitted versions that lack icons this set imports and any future
+  major that drops those aliases.
+  
+  Under lucide 1.x, lucide-backed icons render with `aria-hidden="true"` by default, several
+  glyphs have redrawn paths, and the kebab class of digit-suffixed icons changes
+  (`lucide-trash2` → `lucide-trash-2`).
+
 ## 1.1.3
 
 ### Patch Changes
