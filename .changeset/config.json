@@ -3,7 +3,7 @@
   "changelog": [
     "@changesets/changelog-github",
     {
-      "repo": "linked-cm/icons"
+      "repo": "linked-fw/icons"
     }
   ],
   "commit": false,
