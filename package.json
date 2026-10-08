@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/linked-fw/icons.git"
   },
-  "version": "1.1.4",
+  "version": "1.1.5",
   "type": "module",
   "packageManager": "npm@12.1.0",
   "main": "lib/esm/index.js",

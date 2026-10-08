@@ -1,5 +1,11 @@
 # @\_linked/icons
 
+## 1.1.5
+
+### Patch Changes
+
+- [#33](https://github.com/linked-fw/icons/pull/33) [`005e07b`](https://github.com/linked-fw/icons/commit/005e07b30189b447728bec7083cf6e791d117fda) Thanks [@flyon](https://github.com/flyon)! - Publish only the files consumers need; the tarball no longer includes `.changeset/`, `.gitattributes`, `.github/`, `renovate.json` or tsconfig files.
+
 ## 1.1.4
 
 ### Patch Changes
