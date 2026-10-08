@@ -17,6 +17,10 @@
   "module": "lib/esm/index.js",
   "types": "index.d.ts",
   "license": "MPL-2.0",
+  "files": [
+    "lib",
+    "CHANGELOG.md"
+  ],
   "linkedPackage": true,
   "scripts": {
     "start": "linked dev",
