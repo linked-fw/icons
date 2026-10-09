@@ -1,5 +1,11 @@
 # @\_linked/icons
 
+## 1.1.6
+
+### Patch Changes
+
+- [#35](https://github.com/linked-fw/icons/pull/35) [`8ea7bab`](https://github.com/linked-fw/icons/commit/8ea7babcf9a1b0fed28ed91c093a9d0426bbc9af) Thanks [@flyon](https://github.com/flyon)! - Build with `linked build`, the standard build for linked packages. The published `lib/` holds the same files as before; the `rimraf` and `copyfiles` dev dependencies are gone.
+
 ## 1.1.5
 
 ### Patch Changes
