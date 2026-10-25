@@ -1,5 +1,11 @@
 # @\_linked/icons
 
+## 1.1.7
+
+### Patch Changes
+
+- [#41](https://github.com/linked-fw/icons/pull/41) [`c2d766d`](https://github.com/linked-fw/icons/commit/c2d766d9efdfc0d52a05fded4fadd53c4e365801) Thanks [@flyon](https://github.com/flyon)! - License: MIT (data under its original license)
+
 ## 1.1.6
 
 ### Patch Changes
