@@ -16,10 +16,12 @@
   "main": "lib/esm/index.js",
   "module": "lib/esm/index.js",
   "types": "index.d.ts",
-  "license": "MPL-2.0",
+  "license": "MIT AND ISC",
   "files": [
     "lib",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "LICENSE",
+    "NOTICE"
   ],
   "linkedPackage": true,
   "scripts": {
