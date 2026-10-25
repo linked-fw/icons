@@ -8,6 +8,7 @@ import {
   ArrowLeft,
   ArrowLeftRight,
   ArrowRight,
+  ArrowDown,
   ArrowUp,
   BadgeCheck,
   ShieldCheck,
@@ -104,6 +105,19 @@ import {
   PlusCircle,
   ChevronsUpDown,
 } from 'lucide-react';
+
+import type { ComponentType } from 'react';
+import type { LucideProps } from 'lucide-react';
+
+/**
+ * Wraps a lucide icon so it keeps the `width` / `height` props (default 15) the hand-drawn
+ * arrow and close icons took, next to lucide's own `size`, `color` and `className`.
+ */
+const sized =
+  (Icon: ComponentType<LucideProps>) =>
+  ({ width = '15', height = '15', ...props }: LucideProps) => (
+    <Icon width={width} height={height} {...props} />
+  );
 
 export const Icons = {
   ShieldCheck,
@@ -562,60 +576,9 @@ export const Icons = {
     </svg>
   ),
   CaretSort: ChevronsUpDown,
-  UpArrow: ({
-    color = 'currentColor',
-    width = '15',
-    height = '15',
-    ...props
-  }) => (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={width}
-      height={height}
-      enableBackground="new 0 0 240.835 240.835"
-      version="1.1"
-      viewBox="0 0 240.835 240.835"
-      xmlSpace="preserve"
-    >
-      <path d="M129.007 57.819c-4.68-4.68-12.499-4.68-17.191 0L3.555 165.803c-4.74 4.74-4.74 12.427 0 17.155 4.74 4.74 12.439 4.74 17.179 0l99.683-99.406 99.671 99.418c4.752 4.74 12.439 4.74 17.191 0 4.74-4.74 4.74-12.427 0-17.155L129.007 57.819z"></path>
-    </svg>
-  ),
-  DownArrow: ({
-    color = 'currentColor',
-    width = '15',
-    height = '15',
-    ...props
-  }) => (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={width}
-      height={height}
-      enableBackground="new 0 0 512 512"
-      viewBox="0 0 240.835 240.835"
-    >
-      <path
-        d="M129.007 57.819c-4.68-4.68-12.499-4.68-17.191 0L3.555 165.803c-4.74 4.74-4.74 12.427 0 17.155 4.74 4.74 12.439 4.74 17.179 0l99.683-99.406 99.671 99.418c4.752 4.74 12.439 4.74 17.191 0 4.74-4.74 4.74-12.427 0-17.155L129.007 57.819z"
-        data-original="#000000"
-        transform="rotate(-180 120.417 120.417)"
-      ></path>
-    </svg>
-  ),
-  Close: ({
-    color = 'currentColor',
-    width = '15',
-    height = '15',
-    ...props
-  }) => (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={width}
-      height={height}
-      viewBox="0 0 512 512"
-      fill={color}
-    >
-      <path d="M292.2 256l109.9-109.9c10-10 10-26.2 0-36.2s-26.2-10-36.2 0L256 219.8 146.1 109.9c-10-10-26.2-10-36.2 0s-10 26.2 0 36.2L219.8 256 109.9 365.9c-10 10-10 26.2 0 36.2 5 5 11.55 7.5 18.1 7.5s13.1-2.5 18.1-7.5L256 292.2l109.9 109.9c5 5 11.55 7.5 18.1 7.5s13.1-2.5 18.1-7.5c10-10 10-26.2 0-36.2z"></path>
-    </svg>
-  ),
+  UpArrow: sized(ArrowUp),
+  DownArrow: sized(ArrowDown),
+  Close: sized(X),
   PlusCircled: PlusCircle,
   Table: Table2,
   Calendar: LucideCalendar,
