@@ -1,5 +1,11 @@
 # @\_linked/icons
 
+## 1.1.8
+
+### Patch Changes
+
+- [#43](https://github.com/linked-fw/icons/pull/43) [`0d81ae0`](https://github.com/linked-fw/icons/commit/0d81ae083a51da993fca7a81044bbcbdcfb6eaee) Thanks [@flyon](https://github.com/flyon)! - `UpArrow`, `DownArrow` and `Close` now render lucide-react's `ArrowUp`, `ArrowDown` and `X`. Exported names and the `width`/`height` props are unchanged; `size`, `color` and `className` now work too. NOTICE now carries a trademark line for the Dropbox and Google Drive logos.
+
 ## 1.1.7
 
 ### Patch Changes
