@@ -1,5 +1,11 @@
 # @\_linked/icons
 
+## 1.1.9
+
+### Patch Changes
+
+- [#48](https://github.com/linked-fw/icons/pull/48) [`13459fa`](https://github.com/linked-fw/icons/commit/13459faa444fc4c1e503e4a46f83c81c73820667) Thanks [@flyon](https://github.com/flyon)! - `package.json` says what this package is in `"linked": {"kind": "library"}` instead of `"linkedPackage": true`, which the CLI and server no longer read.
+
 ## 1.1.8
 
 ### Patch Changes
