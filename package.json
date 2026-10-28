@@ -23,7 +23,9 @@
     "LICENSE",
     "NOTICE"
   ],
-  "linkedPackage": true,
+  "linked": {
+    "kind": "library"
+  },
   "scripts": {
     "start": "linked dev",
     "build": "linked build",
