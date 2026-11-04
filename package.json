@@ -65,7 +65,7 @@
     "@_linked/cli": "^1.45.5",
     "@changesets/changelog-github": "^1.0.0",
     "@changesets/cli": "^3.0.0",
-    "@types/node": "^24.0.0",
+    "@types/node": "^26.0.0",
     "@types/react": "^19.3.0",
     "lucide-react": "^1.0.0",
     "react": "^19.3.0",
