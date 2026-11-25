@@ -1,5 +1,11 @@
 # @\_linked/icons
 
+## 1.1.10
+
+### Patch Changes
+
+- [#58](https://github.com/linked-fw/icons/pull/58) [`07dd877`](https://github.com/linked-fw/icons/commit/07dd877cbb6f01a8fd6e18f96ec48c05a35da93c) Thanks [@flyon](https://github.com/flyon)! - Drop the unused `@_linked/core` dependency. The icon set never imported it, and its old `^2` range made an app on `@_linked/core` 3 install a second, nested copy of core. Builds with `@_linked/cli` 2.
+
 ## 1.1.9
 
 ### Patch Changes
